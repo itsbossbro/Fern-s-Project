@@ -55,7 +55,7 @@ body {
 }
 
 .image-button img {
-  width: 70px; /* Adjust size for responsiveness */
+  width: 200px; /* Adjust size for responsiveness */
   height: auto; /* Maintain aspect ratio */
   transform: rotate(180deg);
 }
