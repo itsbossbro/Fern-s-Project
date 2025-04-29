@@ -20,7 +20,7 @@ body {
 
 /* Ensure the background video scales properly */
 #bg-video {
-  position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
