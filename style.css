@@ -1,10 +1,4 @@
-body {
-    
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
+
 
 .background-wrapper {
   position: fixed;
@@ -37,7 +31,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 0 auto; /* Center horizontally */
-  font-family: Helvetica, sans-serif;
+  font-family: 'ploy_alpha', sans-serif;
   font-weight: 400;
   font-size: 19px; /* Use relative units for better scaling */
   line-height: 100%;
@@ -45,6 +39,8 @@ body {
   position: fixed;
   width: 331px;
   height: 182px;
+  color: #3F230D;
+
   
 }
 
@@ -79,6 +75,7 @@ body {
   top: 685px; /* Adjust position to align with the arrow */
   font-family: 'ploy_alpha', sans-serif;
   text-align: center;
+  position: fixed;
 }
 
 .content {
@@ -92,6 +89,10 @@ body {
   z-index: 1;
   padding: 20px; /* Add padding for better spacing on smaller screens */
   box-sizing: border-box; /* Include padding in width/height calculations */
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  position: fixed;
 }
 
 @font-face {
@@ -99,4 +100,118 @@ body {
   src: url('./fonts/ploy_alpha-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*page 2 styles
+
+*/
+
+.intro-text{
+  font-family: 'ploy_alpha', sans-serif;
+font-weight: 700;
+font-size: 25px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+width: 418;
+height: 182;
+top: 224px;
+left: -14px;
+
+}
+
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'ploy_alpha', sans-serif;
+  background: #F4A261; /* Background color */
+  color: #3F230D; /* Default text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+
+/* Intro Text */
+.intro-text {
+  font-family: 'ploy_alpha', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+  color: #3F230D;
+  margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left; /* Ensure the label aligns to the left */
+}
+.input-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left; /* Align the label to the beginning of the input box */
+}
+
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3F230D;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center; /* Keep the input text centered */
+  background: #FBE8D3;
+  font-family: 'ploy_alpha', sans-serif;
+}
+
+
+.footer-logo {
+  position: fixed; /* Keep the footer logo fixed relative to the viewport */
+  bottom: 20px; /* Adjust this value to move the logo further down */
+  left: 50%; /* Center the logo horizontally */
+  transform: translateX(-50%); /* Ensure perfect horizontal centering */
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 80px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+
+/*fade animation*/
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 20;
+  }
+}
+
+body.fade-in {
+  animation: fadeIn 3s ease-in-out; /* 1-second fade-in effect */
 }
