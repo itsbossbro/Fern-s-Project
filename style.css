@@ -58,7 +58,7 @@
   width: 84px; /* Updated width */
   height: 56px; 
   transform: rotate(180deg);
-  top: 629px;
+  top: 600px;
   position: fixed;
 
 }
@@ -72,7 +72,7 @@
   font-size: 16px; /* Adjust font size */
   margin-top: 10px; /* Add spacing between the arrow and text */
   position: fixed;
-  top: 685px; /* Adjust position to align with the arrow */
+  top: 650px; /* Adjust position to align with the arrow */
   font-family: 'ploy_alpha', sans-serif;
   text-align: center;
   position: fixed;
@@ -184,7 +184,7 @@ body {
 
 .footer-logo {
   position: fixed; /* Keep the footer logo fixed relative to the viewport */
-  bottom: 20px; /* Adjust this value to move the logo further down */
+  bottom: 2px; /* Adjust this value to move the logo further down */
   left: 50%; /* Center the logo horizontally */
   transform: translateX(-50%); /* Ensure perfect horizontal centering */
   text-align: center;
@@ -197,11 +197,6 @@ body {
 
 
 
-
-
-
-
-/*fade animation*/
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
@@ -213,5 +208,113 @@ body {
 }
 
 body.fade-in {
-  animation: fadeIn 3s ease-in-out; /* 1-second fade-in effect */
+  animation: fadeIn 3s ease-in-out;
+}
+
+/*page3 styles*/
+.page3text{
+  
+  
+  position:center;
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 3s ease-in-out forwards; /* Fade in the container */
+  animation-delay: 2s; 
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  top: 14.34px;
+ 
+
+}
+.page3text p span {
+  display: block; /* Treat each line as a block */
+  opacity: 0; /* Start invisible */
+  animation: fadeInLine 1.5s ease-out forwards; /* Apply animation */
+}
+
+.page3text p span:nth-child(1) {
+  animation-delay: 3s; /* First line appears immediately */
+}
+
+.page3text p span:nth-child(2) {
+  animation-delay: 6s; /* Second line appears after 0.5s */
+}
+
+.page3text p span:nth-child(3) {
+  animation-delay: 9s; /* Third line appears after 1s */
+}
+
+.page3text p span:nth-child(4) {
+  animation-delay: 12s; /* Fourth line appears after 1.5s */
+}
+
+.page3text p span:nth-child(5) {
+  animation-delay: 15s; /* Fifth line appears after 2s */
+}
+
+
+@keyframes fadeInLine {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Reset position */
+  }
+}
+
+
+/* Fade-in animation for the arrow and text */
+@keyframes fadeInDelayed {
+  from {
+    opacity: 0;
+    pointer-events: none; /* Disable interaction during animation */
+  }
+  to {
+    opacity: 1;
+    pointer-events: auto; /* Enable interaction when animation completes */
+  }
+}
+
+.orange-arrow img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  top: 650px; /* Position the arrow */
+  right: 35%; /* Position the arrow horizontally */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 17s; /* Delay the appearance by 17 seconds */
+}
+
+.orange-arrow img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.orange-arrow img[style*="opacity: 1"] {
+  pointer-events: auto; /* Enable interaction when fully visible */
+}
+
+.orangetext {
+  position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 735px; /* Align the text perfectly below the arrow */
+  right: 35%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #F5681C;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 17s; /* Delay the appearance by 17 seconds */
 }
