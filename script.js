@@ -13,3 +13,7 @@ function animateButton() {
       window.location.href = "iPhone13-and-14-2.html"; // Navigate after animation
     }, 1000); // Time should match the animation duration
   }
+
+  
+
+  

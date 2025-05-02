@@ -318,3 +318,162 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 17s; /* Delay the appearance by 17 seconds */
 }
+
+
+/*page4*/
+.question-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.question-text {
+  color: white;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.choice-button {
+  background-color: #FBE8D3;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 60px;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 20px;
+  color: #3F230D;
+  cursor: pointer;
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.choice-button:hover {
+  transform: scale(1.05);
+}
+/*page5*/
+.center-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 600px;
+}
+
+.center-text p {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.center-text p:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.center-text p:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.whitetext {
+  position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 800px; /* Align the text perfectly below the arrow */
+  right: 35%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FDECC9;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 5s; /* Delay the appearance by 17 seconds */
+
+}
+@media screen and (max-width: 768px) {
+  .whitetext {
+      font-size: 12px;
+  }
+}
+
+.orange-arrow2 img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  top: 720px; /* Position the arrow */
+  right: 35%; /* Position the arrow horizontally */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 5s; /* Delay the appearance by 17 seconds */
+  
+}
+
+.orange-arrow2 img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.orange-arrow2 img[style*="opacity: 1"] {
+  pointer-events: auto; /* Enable interaction when fully visible */
+}
+
+
+/*page5_1*/
+
+
+/*page5*/
+.center-text5_1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 600px;
+}
+
+.center-text5_1 p {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.center-text5_1 p:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.center-text5_1 p:nth-child(2) {
+  animation-delay: 2s;
+}
+
+@media screen and (max-width: 768px) {
+  .center-text5_1 {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+}
