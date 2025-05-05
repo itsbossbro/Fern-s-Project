@@ -661,3 +661,159 @@ body.fade-in {
 .center-text11 p:nth-child(2) {
   animation-delay: 4s;
 }
+.center-text11 p:nth-child(3) {
+  animation-delay: 6s;
+}
+
+
+
+/*page12*/
+
+.orangeundertext{
+
+  position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 800px; /* Align the text perfectly below the arrow */
+  right: 35%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #F5681C;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 15s; /* Delay the appearance by 17 seconds */
+
+}
+
+
+
+.center-text12 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #3F230D;
+  ;
+  ;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 600px;
+}
+
+.center-text12 p {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.center-text12 p:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.center-text12 p:nth-child(2) {
+  animation-delay: 4s;
+}
+.center-text12 p:nth-child(3) {
+  animation-delay: 6s;
+}
+.center-text12 p:nth-child(4) {
+  animation-delay: 8s;
+}
+.center-text12 p:nth-child(5) {
+  animation-delay: 10s;
+}
+.center-text12 p:nth-child(6) {
+  animation-delay: 12s;
+}
+
+
+.brownarrowanimation img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  top: 700px; /* Position the arrow */
+  right: 35%; /* Position the arrow horizontally */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 15s; /* Delay the appearance by 17 seconds */
+}
+
+
+.brownarrowanimation img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/*page13*/
+.center-text13 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #3F230D;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.orangepg13{
+  position: fixed;
+  font-family: ploy_alpha;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #F5681C;
+
+}
+
+.brownpg13 img{
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+   /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  right: 35%; /* Position the arrow horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; /* Add spacing between text and button */
+  cursor: pointer;
+  
+
+}
+.brownpg13 img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/*page14*/
+.choice-button2 {
+  background-color:#CFBC9C;
+  
+  border: none;
+  border-radius: 30px;
+  padding: 15px 60px;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 20px;
+  color: #3F230D;
+  cursor: pointer;
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+.choice-button2:hover {
+  transform: scale(1.05);
+}
