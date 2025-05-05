@@ -563,3 +563,70 @@ body.fade-in {
     line-height: 1.5;
   
 }
+
+/*page9*/
+
+.blacktext {
+  position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 800px; /* Align the text perfectly below the arrow */
+  right: 35%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3F230D;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 5s; /* Delay the appearance by 17 seconds */
+
+}
+@media screen and (max-width: 768px) {
+  .whitetext {
+      font-size: 12px;
+  }
+}
+
+.center-text9 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #1248DC;
+  ;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 600px;
+}
+
+.center-text9 p {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.center-text9 p:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.center-text9 p:nth-child(2) {
+  animation-delay: 4s;
+}
+
+/*page10*/
+
+.question-text3{
+
+  
+    color: #3F230D;
+
+    font-family: 'ploy_alpha', sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
