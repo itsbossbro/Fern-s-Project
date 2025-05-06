@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-wrapper">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/bluebg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+       document.body.classList.add("fade-in");
+     });
+    
+   </script>
+
+    <div class="question-container">
+        <div class="question-text">
+            <p>เราฟังคำเเนะนำและ</p>
+            <p>มุมมองของเค้าเรื่องปัญหาชีวิตเรา</p>
+
+            
+        </div>
+        <div class="button-group">
+            <button class="choice-button" onclick="window.location.href='page20.html'">ใช่</button>
+            <button class="choice-button" onclick="window.location.href='page20_1.html'">ไม่ใช่</button>
+        </div>
+    </div>
+</body>
+</html>
