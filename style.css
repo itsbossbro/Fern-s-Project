@@ -34,7 +34,7 @@
   font-family: 'ploy_alpha', sans-serif;
   font-weight: 400;
   font-size: 19px; /* Use relative units for better scaling */
-  line-height: 100%;
+  line-height: 2%;
   letter-spacing: 0%;
   position: fixed;
   width: 331px;
