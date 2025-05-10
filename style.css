@@ -1096,7 +1096,7 @@ body.fade-in {
 }
 
 /*page22*/
-.navigation-container {
+.navigation-container22 {
     position: fixed; /* Fixes the position relative to the viewport */
     bottom: 20px; /* Adjust the distance from the bottom of the screen */
     right: 550px; /* Adjust the distance from the right of the screen */
@@ -1145,4 +1145,7 @@ body.fade-in {
     letter-spacing: 0%;
     text-align: center;
     color: #1248DC;
+    opacity: 0; /* Add this */
+    animation: fadeInDelayed 1s ease-in-out forwards;
+    animation-delay: 6s; /* Changed from 10s */
 }
