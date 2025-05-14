@@ -27,11 +27,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto; /* Center horizontally */
+  
   font-family: 'ploy_alpha', sans-serif;
   font-weight: 400;
   font-size: 19px; /* Use relative units for better scaling */
-  line-height: 2%;
+  line-height: 1%;
   letter-spacing: 0%;
   position: fixed;
   width: 331px;
@@ -46,16 +46,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Add spacing between text and button */
   cursor: pointer;
   transition: transform 0.3s ease-out;
 }
 
 .image-button img {
-  width: 84px; /* Updated width */
-  height: 56px; 
+  width: 120px; /* Updated width */
+  height: 90px; 
   transform: rotate(180deg);
-  top: 600px;
+  top: 590px;
   position: fixed;
 
 }
@@ -112,19 +111,6 @@
 
 */
 
-.intro-text{
-  font-family: 'ploy_alpha', sans-serif;
-font-weight: 700;
-font-size: 25px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-width: 418;
-height: 182;
-top: 224px;
-left: -14px;
-
-}
 
 
 /* Global Styles */
@@ -169,7 +155,7 @@ body {
 
 .input-group input {
   width: 100%;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #FDECC9;
   border-radius: 20px;
   font-size: 16px;
@@ -219,11 +205,13 @@ body.fade-in {
   animation-delay: 2s; 
   font-weight: 700;
   font-size: 24px;
-  line-height: 130%;
+  line-height: 140%;
   letter-spacing: 0%;
   text-align: center;
   top: 14.34px;
  
+
+  
 
 }
 .page3text p span {
@@ -285,12 +273,19 @@ body.fade-in {
   pointer-events: none; /* Disable interaction initially */
   width: 148px; /* Adjusted width */
   height: 123px; /* Adjusted height */
-  top: 650px; /* Position the arrow */
-  right: 35%; /* Position the arrow horizontally */
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 17s; /* Delay the appearance by 17 seconds */
+  right: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: 650px; /* Position the arrow */
+  
+
+
 }
+
 
 .orange-arrow img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
@@ -306,7 +301,7 @@ body.fade-in {
   font-size: 16px; /* Adjust font size */
   text-align: center; /* Center the text */
   top: 735px; /* Align the text perfectly below the arrow */
-  right: 35%; /* Match the horizontal position of the arrow */
+  right: 1%; /* Match the horizontal position of the arrow */
   width: 148px; /* Match the width of the arrow */
   font-weight: 700;
   line-height: 100%;
@@ -315,6 +310,87 @@ body.fade-in {
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 17s; /* Delay the appearance by 17 seconds */
+}
+
+
+
+/*page3_1*/
+.orange-arrow3_1 img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 4s; /* Delay the appearance by 17 seconds */
+  right: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: 650px; /* Position the arrow */
+  
+
+
+}
+
+
+.orange-arrow3_1 img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.orange-arrow3_1 img[style*="opacity: 1"] {
+  pointer-events: auto; /* Enable interaction when fully visible */
+}
+
+.orangetext3_1 {
+  position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 735px; /* Align the text perfectly below the arrow */
+  right: 1%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #F5681C;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 4s; /* Delay the appearance by 17 seconds */
+}
+.page3_1text{
+  
+  
+  position:center;
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 3s ease-in-out forwards; /* Fade in the container */
+  animation-delay: 2s; 
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50%;
+  letter-spacing: 0%;
+  text-align: center;
+  top: 14.34px;
+ 
+
+  
+
+}
+.page3_1text p  {
+  display: block; /* Treat each line as a block */
+  opacity: 0; /* Start invisible */
+  animation: fadeInLine 1.5s ease-out forwards; /* Apply animation */
+}
+
+.page3-1text p :nth-child(1) {
+  animation-delay: 3s; /* First line appears immediately */
+}
+
+.page3_1text p :nth-child(2) {
+  animation-delay: 6s; /* Second line appears after 0.5s */
 }
 
 
@@ -330,11 +406,11 @@ body.fade-in {
 }
 
 .question-text {
-  color: white;
+  color: #FBE8D3;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 24px;
   margin-bottom: 40px;
-  line-height: 1.5;
+  line-height: 50%;
 }
 
 .button-group {
@@ -345,21 +421,24 @@ body.fade-in {
 }
 
 .choice-button {
-  background-color: #FBE8D3;
+  background-color: #FDECC9;
   border: none;
   border-radius: 30px;
   padding: 15px 60px;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 20px;
-  color: #3F230D;
+  color:  #3F230D;
   cursor: pointer;
   width: 200px;
   transition: transform 0.2s ease;
 }
 
+
 .choice-button:hover {
+  background-color: #C4A484;
   transform: scale(1.05);
 }
+
 /*page5*/
 .center-text {
   position: fixed;
@@ -388,31 +467,25 @@ body.fade-in {
 .center-text p:nth-child(2) {
   animation-delay: 2s;
 }
-
 .whitetext {
   position: fixed; /* Position the text independently */
   font-family: 'ploy_alpha', sans-serif;
   font-size: 16px; /* Adjust font size */
   text-align: center; /* Center the text */
-  top: 800px; /* Align the text perfectly below the arrow */
-  right: 35%; /* Match the horizontal position of the arrow */
+  top: 735px; /* Align the text perfectly below the arrow */
+  right: 1%; /* Match the horizontal position of the arrow */
   width: 148px; /* Match the width of the arrow */
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #FDECC9;
+  color: #FBE8D3;
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
-  animation-delay: 5s; /* Delay the appearance by 17 seconds */
-
-}
-@media screen and (max-width: 768px) {
-  .whitetext {
-      font-size: 12px;
-  }
+  animation-delay: 4s; /* Delay the appearance by 17 seconds */
 }
 
-.orange-arrow2 img {
+
+.orange-arrow5 img {
   cursor: pointer; /* Add a pointer cursor for interactivity */
   position: fixed; /* Position the arrow independently of other elements */
   z-index: 10; /* Ensure it appears above other elements */
@@ -420,21 +493,25 @@ body.fade-in {
   pointer-events: none; /* Disable interaction initially */
   width: 148px; /* Adjusted width */
   height: 123px; /* Adjusted height */
-  top: 720px; /* Position the arrow */
-  right: 34.5%; /* Position the arrow horizontally */
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
-  animation-delay: 5s; /* Delay the appearance by 17 seconds */
+  animation-delay: 4s; /* Delay the appearance by 17 seconds */
+  right: 1%;
   justify-content: center;
   display: flex;
   align-items: center;
+  top: 650px; /* Position the arrow */
+  
+
+
 }
 
-.orange-arrow2 img:hover {
+
+.orange-arrow5 img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-.orange-arrow2 img[style*="opacity: 1"] {
+.orange-arrow5 img[style*="opacity: 1"] {
   pointer-events: auto; /* Enable interaction when fully visible */
 }
 
@@ -479,6 +556,43 @@ body.fade-in {
 }
 
 /*page7*/
+.centerimage-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.centerimage-button img {
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  transform: rotate(180deg);
+  top: 490px;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 6s; /* Delay the appearance by 17 seconds */
+}
+
+.centerimage-button img:hover {
+  transform: rotate(180deg) scale(1.05);
+}
+.centerwhitetext {
+  color: #FBEBCA;
+  ; /* Set text color to blue */
+  font-size: 16px; /* Adjust font size */
+  margin-top: 10px; /* Add spacing between the arrow and text */
+  position: fixed;
+  top: 565px; /* Adjust position to align with the arrow */
+  font-family: 'ploy_alpha', sans-serif;
+  text-align: center;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 6s; /* Delay the appearance by 17 seconds */
+}
+
 .center-text7 {
   position: fixed;
   top: 40%;
@@ -488,9 +602,10 @@ body.fade-in {
   color: white;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 100%;
   width: 100%;
   max-width: 600px;
+
 }
 
 .center-text7 p {
@@ -509,14 +624,14 @@ body.fade-in {
 
 .text-input-container {
   position: fixed;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   max-width: 400px;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
-  animation-delay: 4s;
+  animation-delay: 6s;
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -551,6 +666,7 @@ body.fade-in {
       padding: 12px;
   }
 }
+
 
 /*page8*/
 .question-text2 {
@@ -1198,25 +1314,9 @@ body.fade-in {
     animation-delay: 5s;
 }
 
-.choice-button {
-    font-family: 'ploy_alpha', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #3F230D;
-    background-color: #D9C5B2;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
+
 
 .choice-button:hover {
     background-color: #C4A484;
     transform: scale(1.05);
-}
-
-.choice-button:active {
-    transform: scale(0.95);
 }
