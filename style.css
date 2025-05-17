@@ -449,7 +449,7 @@ body.fade-in {
   color: white;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 100%;
   width: 100%;
   max-width: 600px;
 }
@@ -1199,17 +1199,7 @@ body.fade-in {
 }
 
 
-/*page17*/
-.question-text17{
 
-  
-  color: #3F230D;
-
-  font-family: 'ploy_alpha', sans-serif;
-  font-size: 24px;
-  margin-bottom: 40px;
-  line-height: 1;
-}
 
 /*page18*/
 .orange-arrow18_8s img {
@@ -1258,6 +1248,19 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 8s; /* Delay the appearance by 17 seconds */
 }
+/*page19*/
+.question-text19{
+  color: #FBE8D3;
+
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+  line-height: 50%;
+}
+
+
+  
+
 
 
 /*page20_1*/
@@ -1270,9 +1273,10 @@ body.fade-in {
   color: white;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 100%;
   width: 100%;
   max-width: 600px;
+  
 }
 
 .center-text20 p {
