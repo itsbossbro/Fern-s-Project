@@ -1407,20 +1407,42 @@ body.fade-in {
 
 .bluetext22{
   
-    position: fixed; /* Fixes the position relative to the viewport */
-    bottom: 20px; /* Adjust the distance from the bottom of the screen */
-    right: 585px; /* Adjust the distance from the right of the screen */
-    z-index: 1000; /* Ensures it stays above other elements */
-    font-family: ploy_alpha;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #1248DC;
-    opacity: 0; /* Add this */
-    animation: fadeInDelayed 1s ease-in-out forwards;
-    animation-delay: 6s; /* Changed from 10s */
+    position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 735px; /* Align the text perfectly below the arrow */
+  right: 1%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1248DC;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 7s; /* Delay the appearance by 17 seconds */
+}
+
+/*page22*/
+.bluearrow22 img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 7s; /* Delay the appearance by 17 seconds */
+  right: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: 650px; /* Position the arrow */
+  
+
+
 }
 
 /*page23*/
