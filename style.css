@@ -529,7 +529,7 @@ body.fade-in {
   color: white;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 100%;
   width: 100%;
   max-width: 600px;
 }
@@ -748,11 +748,6 @@ body.fade-in {
   animation-delay: 4s; /* Delay the appearance by 17 seconds */
 
 
-}
-@media screen and (max-width: 768px) {
-  .whitetext {
-      font-size: 12px;
-  }
 }
 
 .center-text9 {
@@ -1130,7 +1125,7 @@ body.fade-in {
   text-align: center;
   color: black;
   font-family: 'ploy_alpha', sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 100%;
   width: 100%;
   max-width: 600px;
