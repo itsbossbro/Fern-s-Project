@@ -1501,3 +1501,45 @@ body.fade-in {
     background-color: #C4A484;
     transform: scale(1.05);
 }
+
+
+/*page24*/
+
+.bluetext24{
+  
+    position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 735px; /* Align the text perfectly below the arrow */
+  right: 1%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1248DC;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 6s; /* Delay the appearance by 17 seconds */
+}
+
+.bluearrow24 img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 6s; /* Delay the appearance by 17 seconds */
+  right: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: 650px; /* Position the arrow */
+  
+
+
+}
