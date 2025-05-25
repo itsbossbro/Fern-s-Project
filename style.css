@@ -1671,7 +1671,7 @@ top: 650px; /* Position the arrow */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    line-height: 100%;
     background-color: black;
     opacity: 0;
     pointer-events: none;
@@ -1682,35 +1682,30 @@ top: 650px; /* Position the arrow */
 /*page28*/
 .exhibition-title {
   position: fixed;
-  top: 2vh;
+  top: 4vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   z-index: 2;
   width: 90%;
-}
-
-.exhibition-title h1 {
+  line-height: 50%;
   color: #3F230D;
   font-family: 'ploy_alpha', sans-serif;
-  font-size: clamp(20px, 4vw, 28px);
+  font-size: clamp(24px, 4vw, 28px);
   margin-bottom: 8px;
+  
 }
 
-.exhibition-title h2 {
-  color: #3F230D;
-  font-family: 'ploy_alpha', sans-serif;
-  font-size: clamp(16px, 3vw, 20px);
-  margin-bottom: 15px;
-}
+
+
 
 .scrollable-container {
   position: fixed;
-  top: 18vh;
+  top: 16vh;
   left: 50%;
   transform: translateX(-50%);
   width: 85%;
-  height: 65vh;
+  height: 60vh;
   overflow-y: auto;
   padding: 10px;
 }
@@ -1718,51 +1713,91 @@ top: 650px; /* Position the arrow */
 .gallery-content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
   align-items: center;
+  padding: 15px;
+  width: 100%;
 }
 
-.gallery-img {
-  width: 85%;
-  max-width: 400px;
-  height: auto;
+.grid-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid-row .gallery-img {
+  width: calc(50% - 10px);
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
 .large-img {
-  width: 90%;
-  max-width: 450px;
-}
-
-.navigation-container {
-  position: fixed;
-  bottom: 3vh;
-  right: 5vw;
-  z-index: 3;
-}
-
-.orange-arrow28 img {
-  width: clamp(30px, 8vw, 40px);
-  height: auto;
-}
-
-.whitetext28 {
-  font-size: clamp(12px, 3vw, 14px);
-  margin-top: 5px;
+  width: calc(100% - 30px);
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 768px) {
-  .scrollable-container {
-      width: 90%;
-      height: 60vh;
-  }
-  
-  .gallery-img {
-      width: 90%;
-      max-width: 300px;
+  .grid-row .gallery-img {
+      height: 150px;
   }
   
   .large-img {
-      max-width: 320px;
+      height: 200px;
   }
 }
+
+
+/*page28*/
+.orange-arrow18_3s img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 3s; /* Delay the appearance by 17 seconds */
+  right: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: 650px; /* Position the arrow */
+  
+
+
+}
+
+
+.orange-arrow18_3s img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.orange-arrow18_3s img[style*="opacity: 1"] {
+  pointer-events: auto; /* Enable interaction when fully visible */
+}
+
+.bluetext18_3s {
+  position: fixed; /* Position the text independently */
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center the text */
+  top: 735px; /* Align the text perfectly below the arrow */
+  right: 1%; /* Match the horizontal position of the arrow */
+  width: 148px; /* Match the width of the arrow */
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1248DC;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 3s; /* Delay the appearance by 17 seconds */
+}
+
