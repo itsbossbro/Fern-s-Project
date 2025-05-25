@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-wrapper">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/sunset w fam .mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+       document.body.classList.add("fade-in");
+     });
+        </script>
+
+<div class="center-text25">
+       <p>วันที่ดวงอาทิตย์ดับ </p>
+       <p>เราจะนึกถึงความอบอุ่นนั้นแค่ไหน?</p>
+       <p>ความเสียดายจะกัดกินใจไปทั้งชีวิต</p>
+       <p>ตอนนี้ยังไม่สายที่จะเห็นว่า</p>
+       <p>เรามีบ้านรอให้กลับไปหาอยู่</p>
+
+
+
+</div>
+</div>
+<div class="navigation-container">
+    <div class="orangearrow26">
+        <a href="page28.html"><img src="assets/orangearrow.png" alt="Orange Arrow"></a>
+    </div>
+    <div class="whitetext26">
+        <span>กดเพื่อไปต่อ</span>
+    </div>
+</div>
+
+<div class="black-overlay"></div>
+
+<script>
+    document.querySelector('.orangearrow26 a').addEventListener('click', function(e) {
+        e.preventDefault();
+        const overlay = document.querySelector('.black-overlay');
+        overlay.style.opacity = '1';
+        setTimeout(() => {
+            window.location.href = 'page27.html';
+        }, 2000); // Wait for 2 seconds before redirecting
+    });
+</script>

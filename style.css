@@ -1540,6 +1540,229 @@ body.fade-in {
   align-items: center;
   top: 650px; /* Position the arrow */
   
+}
+/*page25*/
 
+.center-text25 {
+  position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #3F230D;
+font-family: 'ploy_alpha', sans-serif;
+font-size: 24px;
+line-height: 1.1;
+width: 100%;
+max-width: 600px;
+}
 
+.center-text25 p {
+margin: 10px 0;
+opacity: 0;
+animation: fadeIn 1s ease-out forwards;
+}
+.center-text25 p:nth-child(1) {
+animation-delay: 1s; /* First line appears immediately */
+}
+
+.center-text25 p:nth-child(2) {
+animation-delay: 2s; /* Second line appears after 1 second */
+}
+
+.center-text25 p:nth-child(3) {
+animation-delay: 3s; /* Third line appears after 2 seconds */
+}
+
+.center-text25 p:nth-child(4) {
+animation-delay: 4s; /* Fourth line appears after 3 seconds */
+}
+.center-text25 p:nth-child(5) {
+  animation-delay: 5s; /* Fifth line appears after 4 seconds */
+}
+.center-text25 p:nth-child(6) {
+  animation-delay: 6s; /* Sixth line appears after 5 seconds */
+}
+.center-text25 p:nth-child(7) {
+  animation-delay: 7s; /* Seventh line appears after 6 seconds */
+}
+
+.bluetext25{
+  
+  position: fixed; /* Position the text independently */
+font-family: 'ploy_alpha', sans-serif;
+font-size: 16px; /* Adjust font size */
+text-align: center; /* Center the text */
+top: 735px; /* Align the text perfectly below the arrow */
+right: 1%; /* Match the horizontal position of the arrow */
+width: 148px; /* Match the width of the arrow */
+font-weight: 700;
+line-height: 100%;
+letter-spacing: 0%;
+color: #1248DC;
+opacity: 0; /* Start invisible */
+animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+animation-delay: 8s; /* Delay the appearance by 17 seconds */
+}
+
+.bluearrow25 img {
+cursor: pointer; /* Add a pointer cursor for interactivity */
+position: fixed; /* Position the arrow independently of other elements */
+z-index: 10; /* Ensure it appears above other elements */
+rotate: 180deg;
+pointer-events: none; /* Disable interaction initially */
+width: 148px; /* Adjusted width */
+height: 123px; /* Adjusted height */
+opacity: 0; /* Start invisible */
+animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+animation-delay: 8s; /* Delay the appearance by 17 seconds */
+right: 1%;
+justify-content: center;
+display: flex;
+align-items: center;
+top: 650px; /* Position the arrow */
+
+}
+.bluearrow25 img:hover {
+  transform: scale(1.05);
+}
+/*page26*/
+.orangearrow26 img {
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  position: fixed; /* Position the arrow independently of other elements */
+  z-index: 10; /* Ensure it appears above other elements */
+  rotate: 180deg;
+  pointer-events: none; /* Disable interaction initially */
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 6s; /* Delay the appearance by 17 seconds */
+  right: 1%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: 650px; /* Position the arrow */
+  
+  }
+  .orangearrow26 img:hover {
+    transform: scale(1.05);
+  }
+
+  .whitetext26 {
+    position: fixed; /* Position the text independently */
+    font-family: 'ploy_alpha', sans-serif;
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center the text */
+    top: 735px; /* Align the text perfectly below the arrow */
+    right: 1%; /* Match the horizontal position of the arrow */
+    width: 148px; /* Match the width of the arrow */
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FBE8D3;
+    opacity: 0; /* Start invisible */
+    animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+    animation-delay: 6s; /* Delay the appearance by 17 seconds */
+  }
+
+  .black-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 2s ease;
+    z-index: 9999;
+}
+
+/*page28*/
+.exhibition-title {
+  position: fixed;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+}
+
+.exhibition-title h1 {
+  color: #3F230D;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: clamp(20px, 4vw, 28px);
+  margin-bottom: 8px;
+}
+
+.exhibition-title h2 {
+  color: #3F230D;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: clamp(16px, 3vw, 20px);
+  margin-bottom: 15px;
+}
+
+.scrollable-container {
+  position: fixed;
+  top: 18vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 65vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.gallery-img {
+  width: 85%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.large-img {
+  width: 90%;
+  max-width: 450px;
+}
+
+.navigation-container {
+  position: fixed;
+  bottom: 3vh;
+  right: 5vw;
+  z-index: 3;
+}
+
+.orange-arrow28 img {
+  width: clamp(30px, 8vw, 40px);
+  height: auto;
+}
+
+.whitetext28 {
+  font-size: clamp(12px, 3vw, 14px);
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollable-container {
+      width: 90%;
+      height: 60vh;
+  }
+  
+  .gallery-img {
+      width: 90%;
+      max-width: 300px;
+  }
+  
+  .large-img {
+      max-width: 320px;
+  }
 }
