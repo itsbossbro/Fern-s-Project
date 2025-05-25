@@ -1325,14 +1325,14 @@ body.fade-in {
 
 .center-text21 {
   position: fixed;
-  top: 40%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #3F230D;
   font-family: 'ploy_alpha', sans-serif;
   font-size: 24px;
-  line-height: 1.1;
+  line-height: 100%;
   width: 100%;
   max-width: 600px;
 }
@@ -1353,21 +1353,19 @@ body.fade-in {
   animation-delay: 6s;
 }
 
-.bluetext21{
-  
-    position: fixed;
-    font-family: ploy_alpha;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #1248DC;
-    opacity: 0; /* Add this */
-    animation: fadeInDelayed 1s ease-in-out forwards;
-    animation-delay: 6s; /* Changed from 10s */
-    margin-top: 270px;
-  
+.bluetext21 {
+  color: #1248DC;
+  ; /* Set text color to blue */
+  font-size: 16px; /* Adjust font size */
+  margin-top: 10px; /* Add spacing between the arrow and text */
+  position: fixed;
+  top: 565px; /* Adjust position to align with the arrow */
+  font-family: 'ploy_alpha', sans-serif;
+  text-align: center;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 6s; /* Delay the appearance by 17 seconds */
 }
 
 /*page22*/
