@@ -27,12 +27,22 @@
     </div>
 
     <div class="text-input-container">
-        <input type="text" class="custom-input16" placeholder="พิมพ์คำตอบ">
-    </div>
-
-    <a href="page17.html" class="centerimage-button" onclick="animateButton()">
-        <img src="assets/brownarrow.png" alt="Button" />
-    </a>
+      <input type="text" class="custom-input16" placeholder="พิมพ์คำตอบ" id="childhoodFood">
+  </div>
+  
+  <a href="page17.html" class="centerimage-button" onclick="saveInput(event)">
+      <img src="assets/brownarrow.png" alt="Button" />
+  </a>
+  
+  <script>
+      function saveInput(event) {
+          event.preventDefault();
+          const inputValue = document.getElementById('childhoodFood').value;
+          localStorage.setItem('childhoodFood', inputValue);
+          window.location.href = 'page17.html';
+      }
+  </script>
+  
     <div class="centerimage-button">
       <span class="centerorangetext">กดเพื่อไปต่อ</span>
     </div>

@@ -1,0 +1,82 @@
+
+<body>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="style.css">
+    </head>
+  
+      <div class="background-wrapper">
+        <video autoplay muted loop id="bg-video">
+          <source src="assets/flying_w plate.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+       document.body.classList.add("fade-in");
+     });
+    
+   </script>
+
+<div class="text-container28 initial-text">
+    <div class="fade-content">
+        <p>ถ้าคิดถึง "<span id="foodText">_ _ _ _</span>" กลับบ้านนะ</p>
+        <p>เดี๋ยวไม่มีใครทำให้กินแล้ว</p>       
+        <p class="hashtag">#homeyoungheal</p>
+    </div>
+
+
+</div>
+
+<div class="text-container28 second-text" style="display: none;">
+    <div class="fade-content">
+        <p>ถ้าคิดถึง "<span id="foodText2"></span>" ก็กลับไปกินบ่อยๆ</p>
+        <p>อย่ารอจนไม่มีใครทำให้กินได้อีกแล้ว</p>
+    
+    <p class="hashtag">#homeyoungheal</p>
+    </div>
+    <a href="page29.html" class="centerimage-button28" onclick="animateButton()">
+        <img src="assets/orangearrow.png" alt="Button" />
+    </a>
+    <div class="centerimage-button">
+      <span class="bluetext28">กดเพื่อไปต่อ</span>
+    </div>
+</div>
+
+</div>
+
+    
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("fade-in");
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const savedFood = localStorage.getItem('childhoodFood');
+    if (savedFood) {
+        document.getElementById('foodText').textContent = savedFood;
+        document.getElementById('foodText2').textContent = savedFood;
+    }
+    
+    setTimeout(() => {
+        const initialText = document.querySelector('.initial-text .fade-content');
+        const secondText = document.querySelector('.second-text');
+        
+        initialText.style.opacity = '0';
+        setTimeout(() => {
+            document.querySelector('.initial-text').style.display = 'none';
+            secondText.style.display = 'block';
+            setTimeout(() => {
+                secondText.querySelector('.fade-content').style.opacity = '1';
+            }, 100);
+        }, 1000);
+    }, 6000);
+});
+    </script>
+</body>
+</html>

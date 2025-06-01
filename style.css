@@ -1805,3 +1805,138 @@ top: 650px; /* Position the arrow */
   animation-delay: 3s; /* Delay the appearance by 17 seconds */
 }
 
+/*page28*/
+/* Add to your style.css file */
+.text-container28 {
+  text-align: center;
+  margin-bottom: 30vh;
+}
+
+.text-container28 p {
+  font-family: 'ploy_alpha', sans-serif;
+  color: #3F230D;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.text-container28 .hashtag {
+  color: #0066CC;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.logo-container28 {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-container28 img {
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .text-container28 p {
+      font-size: 20px;
+  }
+  
+  .text-container28 .hashtag {
+      font-size: 16px;
+  }
+  
+  .logo-container28 img {
+      width: 150px;
+  }
+}
+
+/* Add to your style.css */
+.text-container28 {
+  transition: opacity 1s ease;
+}
+
+.initial-text {
+  opacity: 1;
+}
+
+.second-text {
+  opacity: 1;
+}
+
+.text-container28 p {
+  font-family: 'ploy_alpha', sans-serif;
+  color: #3F230D;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Add to your style.css */
+.text-container28 {
+  text-align: center;
+  line-height: 1;
+}
+
+.fade-content {
+  transition: opacity 1s ease;
+}
+
+.initial-text .fade-content {
+  opacity: 1;
+}
+
+.second-text .fade-content {
+  opacity: 0;
+}
+
+.hashtag {
+  color: #0066CC;
+  font-family: 'ploy_alpha', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hashtag {
+      font-size: 16px;
+  }
+}
+
+.centerimage-button28 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.centerimage-button28 img {
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  transform: rotate(180deg);
+  top: 490px;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 1s; /* Delay the appearance by 17 seconds */
+}
+
+.centerimage-button28 img:hover {
+  transform: rotate(180deg) scale(1.05);
+}
+
+
+.bluetext28 {
+  color: #1248DC;
+  ; /* Set text color to blue */
+  font-size: 16px; /* Adjust font size */
+  margin-top: 10px; /* Add spacing between the arrow and text */
+  position: fixed;
+  top: 565px; /* Adjust position to align with the arrow */
+  font-family: 'ploy_alpha', sans-serif;
+  text-align: center;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 1s; /* Delay the appearance by 17 seconds */
+}
