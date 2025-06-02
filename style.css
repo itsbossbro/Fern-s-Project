@@ -1683,6 +1683,11 @@ top: 650px; /* Position the arrow */
     opacity: 1 !important;
 }
 
+/*page26*/
+.blue-text{
+  color: #1248DC;
+}
+
 /*page28*/
 .exhibition-title {
   position: fixed;
