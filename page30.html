@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 30</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #FDECC9;
+        }
+        
+        .background-wrapper {
+            display: none; /* Hide the video background */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const messageBox = document.querySelector('.message-box');
+            let message = localStorage.getItem('selectedFamilyMessage');
+            if (!message) {
+                message = "บอกรักครอบครัววันนี้เลยได้\nทำไมต้องรอโอกาสพิเศษ";
+            }
+            const messageLines = message.split('\n');
+            messageBox.innerHTML = messageLines.map(line => `<p>${line}</p>`).join('');
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("fade-in");
+        });
+    </script>
+</head>
+<body>
+  <div class="content-container29">
+
+      <p class="hashtag29">#homeyoungheal</p>
+  </div>
+  <div class="colorbox">
+    <div class="message-box">
+    </div>
+  </div>
+  <div class="logo-container29">
+      <img src="assets/home.PNG" alt="Logo">
+  </div>
+  <div class="footer-logo30">
+    <img src="assets/home.PNG" alt="Logo">  
+  </div>
+  <div class="credit-text2">
+    <span class="credit-brown2">Made by</span>
+    <span class="credit-orange2">@homeyoungheal</span>
+  </div>
+
+  <div class="shares">
+    <a href="page26.html"><img src="assets/shares.PNG" alt="Logo"></a>
+  </div>
+  
+</body>
+</html>

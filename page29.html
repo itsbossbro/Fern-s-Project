@@ -1,127 +1,95 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home Young Heal - Page 29</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'ploy_alpha', sans-serif;
-      background-color: #FDECC9;
-      width: 390px;
-      height: 844px;
-      overflow: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 29</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #FDECC9;
+        }
+        
+        .background-wrapper {
+            display: none; /* Hide the video background */
+        }
+    </style>
+    <script>
+        const familyMessages = [
+            "บอกรักครอบครัววันนี้เลยได้\nทำไมต้องรอโอกาสพิเศษ",
+            "ที่บ้านเคยถามมั้ยว่า\nช่วงนี้เป็นไงบ้าง?\nถามกลับไปบ้างก็ดีนะ",
+            "ความทรงจำดีๆ \nมาจากเวลาที่เราใช้ร่วมกัน\nไม่ใช่ของขวัญแพงๆ",
+            "บ้านคือที่ที่อบอุ่นเสมอ\nไม่ว่าชีวิตจะเป็นยังไง",
+            "กลับไปกอดคนที่บ้าน\nก่อนที่จะไม่มีโอกาส",
+            "ใครที่บ้านชอบบ่น\nโทรกลับไปให้เค้าบ่นหน่อย\nเดี๋ยวเค้าคิดถึง",
+            "ความรักของครอบครัว\nคือพลังใจที่ดีที่สุด",
+            "คิดถึงบ้านหรอ อย่าคิดแค่ในใจ\nกลับไปหาสิ",
+            "เวลาที่เสียไป เอาคืนไม่ได้\nแต่เวลากับครอบครัว\nเรายังสร้างเพิ่มได้",
+            "อยู่บ้านก็เล่าให้ฟังบ้าง\nไม่ใช่เอาแต่ก้มหน้ากดมือถือ"
+        ];
 
-    .page29-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100%;
-      text-align: center;
-      padding-top: 40px;
-    }
+        window.onload = function() {
+            const messageBox = document.querySelector('.message-box');
+            const randomIndex = Math.floor(Math.random() * familyMessages.length);
+            const randomMessage = familyMessages[randomIndex];
+            
+            // Split message by newlines and create separate p elements
+            const messageLines = randomMessage.split('\n');
+            messageBox.innerHTML = messageLines.map(line => `<p>${line}</p>`).join('');
+        };
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("fade-in");
+        });
 
-    .page29-top-text {
-      font-size: 18px;
-      color: #3F230D;
-      font-weight: 500;
-      margin-bottom: 8px;
-    }
-
-    .page29-hashtag {
-      color: #0066CC;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 25px;
-    }
-
-    .page29-image-block {
-      background: url('assets/pg29.png') no-repeat center;
-      background-size: cover;
-      width: 300px;
-      height: 180px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-      padding: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .page29-image-block p {
-      color: #3F230D;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    .page29-image-block .small-logo {
-      margin-top: 10px;
-      font-size: 13px;
-      color: #0066CC;
-    }
-
-    .page29-main-logo {
-      width: 160px;
-      margin-bottom: 20px;
-    }
-
-    .page29-footer {
-      font-size: 15px;
-      color: #3F230D;
-      line-height: 1.4;
-      margin-bottom: 10px;
-    }
-
-    .page29-footer span {
-      color: #F5681C;
-    }
-
-    .page29-madeby {
-      font-size: 14px;
-      color: #3F230D;
-    }
-
-    .page29-madeby span {
-      color: #F5681C;
-    }
-
-    .page29-share-icon {
-      margin-top: 20px;
-    }
-
-    .page29-share-icon img {
-      width: 28px;
-    }
-  </style>
+    </script>
 </head>
 <body>
-  <div class="page29-container">
-    <div class="page29-top-text">อย่าลืมแชร์ต่อกันด้วยนะ!</div>
-    <div class="page29-hashtag">#homecyoungheal</div>
-
-    <div class="page29-image-block">
-      <p>บอกรักครอบครัววันนี้เลยได้<br>ทำไมต้องรอโอกาสพิเศษ</p>
-      <div class="small-logo">Home<br>Young Heal</div>
-    </div>
-
-    <img class="page29-main-logo" src="logo.png" alt="Home Young Heal Logo">
-
-    <div class="page29-footer">
-      ขอบคุณทุกคน<br>
-      <span>ที่มีส่วนร่วมไปกับนิทรรศการครั้งนี้</span>
-    </div>
-    <div class="page29-madeby">Made by <span>@homecyoungheal</span></div>
-
-    <div class="page29-share-icon">
-      <img src="arrow.png" alt="Share Icon">
-    </div>
+  <div class="content-container29">
+      <h1>อย่าลืมแชร์ต่อกันด้วยนะ!</h1>
+      <p class="hashtag29">#homeyoungheal</p>
   </div>
+
+  <div class="colorbox">
+    <div class="message-box">
+       
+    </div>
+</div>
+
+<div class="logo-container29">
+    <img src="assets/home.PNG" alt="Logo">
+</div>
+
+<div class="footer-logo29">
+  <img src="assets/home.PNG" alt="Logo">
+</div>
+
+<div class="footterbottom">
+  <p>ขอบคุณทุกคน</p>
+  <p>ที่มีส่วนร่วมไปกับโปรเจกต์ด้วยกัน</p>
+</div>
+
+<div class="credit-text">
+  <span class="credit-brown">Made by</span>
+  <span class="credit-orange">@homeyoungheal</span>
+</div>
+<div class="shares">
+  <a href="page30.html"><img src="assets/shares.PNG" alt="Logo"></a>
+</div>
+
+<a href="page30.html" class="shares" onclick="saveMessageAndGo(event)">
+  <img src="assets/shares.png" alt="Button" />
+</a>
+
+<script>
+function saveMessageAndGo(event) {
+  event.preventDefault();
+  const messageBox = document.querySelector('.message-box');
+  // Get all <p> elements and join their text with newlines
+  const message = Array.from(messageBox.querySelectorAll('p')).map(p => p.textContent).join('\n');
+  localStorage.setItem('selectedFamilyMessage', message);
+  window.location.href = 'page30.html';
+}
+</script>
 </body>
-</html>
+  </html>
