@@ -1,35 +1,103 @@
-<body>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <title>Fern's Project</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #content-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #audio-controls {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
 
-    <div class="background-wrapper">
-      <video autoplay muted loop id="bg-video">
-        <source src="assets/newbg1.mov" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+        #music-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 70px;
+            height: 70px;
+        }
+        #music-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- Audio element for background music -->
+    <div id="audio-controls">
+        <audio id="background-music" loop>
+            <source src="assets/bgmusic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="music-button" onclick="toggleMusic()">
+            <img id="music-icon" src="assets/musicon.png" alt="Music Control">
+        </button>
     </div>
-  
-    <div class="content">
-      <div class="thesis-text">
-        
-        <p>โปรเจคนี้เป็นส่วนหนึ่งของ Thesis Project</p>
-        <p>คณะ Communication Design</p>
-        <p>วิทยาลัยนานาชาติ มหาลัยมหิดล</p>
-        
-      </div>
-      
-      <a href="page2.html" class="image-button" onclick="animateButton()">
-        <img src="assets/Button.png" alt="Button" />
-      </a>
-    </div>
-    <div class="image-button">
-      <span class="button-text">กดเพื่อไปต่อ</span>
-    </div>
-  
-    <script src="script.js"></script>
-  </body>
-  
+
+    <!-- Iframe to display other pages -->
+    <iframe id="content-frame" src="page1.html"></iframe>
+
+    <script>
+        // Function to toggle background music
+        function toggleMusic() {
+            const music = document.getElementById('background-music');
+            const musicIcon = document.getElementById('music-icon');
+            if (music.paused) {
+                music.play().catch(function(error) {
+                    console.log("Autoplay prevented:", error);
+                });
+                musicIcon.src = "assets/musicon.png";
+            } else {
+                music.pause();
+                musicIcon.src = "assets/musicoff.png";
+            }
+        }
+
+        // Try to autoplay when page loads
+        window.addEventListener('load', function() {
+            const music = document.getElementById('background-music');
+            const musicIcon = document.getElementById('music-icon');
+            music.volume = 0.5; // Set volume to 50%
+            
+            // Attempt to play music automatically
+            music.play().then(function() {
+                // Autoplay started successfully
+                musicIcon.src = "assets/musicon.png";
+            }).catch(function(error) {
+                // Autoplay was prevented
+                console.log("Autoplay prevented:", error);
+                musicIcon.src = "assets/musicoff.png";
+            });
+        });
+
+        // Additional attempt to play when user interacts with the page
+        document.addEventListener('click', function() {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play().then(function() {
+                    document.getElementById('music-icon').src = "assets/musicon.png";
+                });
+            }
+        }, { once: true }); // Only try once on first click
+    </script>
+</body>
+</html>
