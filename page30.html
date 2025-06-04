@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 30</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <style>
         body {
             background-color: #FDECC9;
@@ -50,10 +51,38 @@
     <span class="credit-orange2">@homeyoungheal</span>
   </div>
 
-  <div class="shares">
-    <a href="page30.html"><img src="assets/shares.PNG" alt="Logo"></a>
+  <div class="shares2">
+    <a href="#" onclick="downloadPageAsImage(event)"><img src="assets/downlaods.png" alt="Download"></a>
   </div>
   
+
+    <script>
+    function downloadPageAsImage(event) {
+      event.preventDefault();
+      
+      // Get the main content we want to capture
+      const element = document.body;
+      
+      html2canvas(element, {
+        backgroundColor: '#FDECC9', // Match the background color
+        scale: 2, // Higher quality
+        logging: false,
+        useCORS: true // Enable loading of external images
+      }).then(canvas => {
+        // Convert canvas to blob
+        canvas.toBlob(function(blob) {
+          // Create download link
+          const link = document.createElement('a');
+          link.download = 'family-message.png';
+          link.href = URL.createObjectURL(blob);
+          link.click();
+          
+          // Clean up
+          URL.revokeObjectURL(link.href);
+        }, 'image/png');
+      });
+    }
+  </script>
 
     <script src="script.js"></script>
 </body>
