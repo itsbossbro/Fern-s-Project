@@ -2148,7 +2148,7 @@ text-align: center;
 
 .credit-text {
   position: fixed;
-  bottom: 60px;
+  bottom: 13%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -2182,8 +2182,8 @@ text-align: center;
 
 .shares img{
   position: fixed;
-  bottom: 10px;
-  left: 47%;
+  bottom: 12px;
+  left: 49%;
   
 width: 33px;
 height: 33px;
@@ -2229,10 +2229,64 @@ height: 33px;
 
 .shares2 img{
   position: fixed;
-  bottom: 10px;
-  left: 47%;
+  bottom: 5%;
+  left: 49%;
   
 width: 33px;
 height: 33px;
 
+}
+
+
+/*page27_1*/
+.center-text27_1{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #3F230D;
+font-family: 'ploy_alpha', sans-serif;
+font-size: 36px;
+line-height: 100%;
+width: 100%;
+max-width: 600px;
+}
+
+.centerimage-button27_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.centerimage-button27_1 img {
+  width: 148px; /* Adjusted width */
+  height: 123px; /* Adjusted height */
+  
+  top: 460px;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 3s; /* Delay the appearance by 17 seconds */
+}
+
+.centerimage-button27_1 img:hover {
+  transform:  scale(1.05);
+}
+
+.bluetext27_1 {
+  color: #1248DC;
+  ; /* Set text color to blue */
+  font-size: 16px; /* Adjust font size */
+  margin-top: 10px; /* Add spacing between the arrow and text */
+  position: fixed;
+  top: 535px; /* Adjust position to align with the arrow */
+  font-family: 'ploy_alpha', sans-serif;
+  text-align: center;
+  position: fixed;
+  opacity: 0; /* Start invisible */
+  animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
+  animation-delay: 3s; /* Delay the appearance by 17 seconds */
 }
