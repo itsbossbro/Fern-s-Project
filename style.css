@@ -1719,6 +1719,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 6s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .bluetext24 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 .bluearrow24 img {
   cursor: pointer; /* Add a pointer cursor for interactivity */
@@ -1736,6 +1744,18 @@ body.fade-in {
   display: flex;
   align-items: center;
   top: 650px; /* Position the arrow */
+  
+}
+.bluearrow24 img:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .bluearrow24 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
   
 }
 /*page25*/
@@ -1801,6 +1821,14 @@ opacity: 0; /* Start invisible */
 animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
 animation-delay: 8s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .bluetext25 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 .bluearrow25 img {
 cursor: pointer; /* Add a pointer cursor for interactivity */
@@ -1819,6 +1847,15 @@ display: flex;
 align-items: center;
 top: 650px; /* Position the arrow */
 
+}
+@media screen and (max-width: 768px) {
+  .bluearrow25 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
 }
 .bluearrow25 img:hover {
   transform: scale(1.05);
@@ -1845,6 +1882,15 @@ top: 650px; /* Position the arrow */
   .orangearrow26 img:hover {
     transform: scale(1.05);
   }
+  @media screen and (max-width: 768px) {
+    .orangearrow26 img {
+      width: 100px; /* Adjusted width for smaller screens */
+      height: 75px; /* Adjusted height for smaller screens */
+      top: 500px; /* Adjusted position for smaller screens */
+      right: 10px;
+    }
+    
+  }
 
   .whitetext26 {
     position: fixed; /* Position the text independently */
@@ -1861,6 +1907,14 @@ top: 650px; /* Position the arrow */
     opacity: 0; /* Start invisible */
     animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
     animation-delay: 6s; /* Delay the appearance by 17 seconds */
+  }
+  @media screen and (max-width: 768px) {
+    .whitetext26 {
+      font-size: 12px; /* Adjust font size for smaller screens */
+      top: 555px; /* Adjust position for smaller screens */
+      width: 120px; /* Adjust width for smaller screens */
+    }
+    
   }
 
   .black-overlay {
@@ -1976,9 +2030,16 @@ top: 650px; /* Position the arrow */
   display: flex;
   align-items: center;
   top: 650px; /* Position the arrow */
+
+}
+@media screen and (max-width: 768px) {
+  .orange-arrow18_3s img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
   
-
-
 }
 
 
@@ -2005,6 +2066,14 @@ top: 650px; /* Position the arrow */
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 3s; /* Delay the appearance by 17 seconds */
+}
+@media screen and (max-width: 768px) {
+  .bluetext18_3s {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
 }
 
 /*page28*/
@@ -2114,6 +2183,14 @@ top: 650px; /* Position the arrow */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 1s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .centerimage-button28 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 400px; /* Adjusted position for smaller screens */
+  }
+  
+}
 
 .centerimage-button28 img:hover {
   transform: rotate(180deg) scale(1.05);
@@ -2133,6 +2210,14 @@ top: 650px; /* Position the arrow */
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 1s; /* Delay the appearance by 17 seconds */
+}
+@media screen and (max-width: 768px) {
+  .bluetext28 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 450px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
 }
 
 
@@ -2181,7 +2266,8 @@ line-height: 50%;
   .colorbox {
       width: 90%;
       max-width: 350px;
-      height: 250px;
+      height: 185px;
+      
   }
 }
 
@@ -2343,6 +2429,13 @@ text-align: center;
   font-family: 'ploy_alpha', sans-serif;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .credit-text {
+    
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+}
 
 .credit-brown {
   color: #3F230D;
@@ -2357,12 +2450,7 @@ text-align: center;
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  .credit-text {
-    top: 670px;
-    font-size: 14px;
-  }
-}
+
 
 
 .shares img{
@@ -2384,6 +2472,13 @@ height: 33px;
   text-align: center;
   width: 100%;
   font-family: 'ploy_alpha', sans-serif;
+  
+}
+@media screen and (max-width: 768px) {
+  .credit-text2 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    bottom: 220px;
+  }
   
 }
 
@@ -2437,6 +2532,13 @@ line-height: 100%;
 width: 100%;
 max-width: 600px;
 }
+@media screen and (max-width: 768px) {
+  .center-text27_1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  
+}
 
 .centerimage-button27_1 {
   display: flex;
@@ -2456,6 +2558,16 @@ max-width: 600px;
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 3s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .centerimage-button27_1 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 400px; /* Adjusted position for smaller screens */
+    
+  }
+  
+}
+
 
 .centerimage-button27_1 img:hover {
   transform:  scale(1.05);
@@ -2474,4 +2586,12 @@ max-width: 600px;
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 3s; /* Delay the appearance by 17 seconds */
+}
+@media screen and (max-width: 768px) {
+  .bluetext27_1 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 445px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
 }
