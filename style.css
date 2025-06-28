@@ -18,25 +18,7 @@
   object-fit: cover; /* Ensures the video covers the entire wrapper without distortion */
 }
 
-/* Adjust thesis-text to be responsive */
-.thesis-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  font-family: 'ploy_alpha', sans-serif;
-  font-weight: 700;
-  font-size: 19px; /* Use relative units for better scaling */
-  line-height: 1;
-  position: fixed;
-  width: 331px;
-  height: 182px;
-  color: #3F230D;
 
-  
-}
 
 /* Make the button responsive */
 .image-button {
@@ -51,7 +33,7 @@
   width: 120px; /* Updated width */
   height: 90px; 
   transform: rotate(180deg);
-  top: 590px;
+  top: 70%;
   position: fixed;
 
 }
@@ -65,10 +47,23 @@
   font-size: 16px; /* Adjust font size */
   margin-top: 10px; /* Add spacing between the arrow and text */
   position: fixed;
-  top: 650px; /* Adjust position to align with the arrow */
+  top: 78%; /* Adjust position to align with the arrow */
   font-family: 'ploy_alpha', sans-serif;
   text-align: center;
   position: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .image-button img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+  }
+  
+  .button-text {
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    top: 78%; /* Adjusted position for smaller screens */
+  }
+  
 }
 
 .content {
@@ -117,6 +112,12 @@
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .center-text1 {
+    font-size: 18px;
+    
+  }
+}
 /*page 2 styles
 
 */
@@ -149,6 +150,14 @@ body {
   color: #3F230D;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .intro-text {
+    font-size: 18px; /* Adjust font size for smaller screens */
+
+    font-weight: 700;
+  }
+  
+}
 
 /* Input Group */
 .input-group {
@@ -157,9 +166,15 @@ body {
 }
 .input-group label {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5px;
   text-align: left; /* Align the label to the beginning of the input box */
+}
+@media screen and (max-width: 768px) {
+  .input-group label {
+    font-size: 16px; /* Adjust label font size for smaller screens */
+  }
+  
 }
 
 
@@ -168,17 +183,24 @@ body {
   padding: 7px;
   border: 1px solid #FDECC9;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center; /* Keep the input text centered */
   background: #FDECC9;
   
   font-family: 'ploy_alpha', sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .input-group input {
+    font-size: 16px; /* Adjust input font size for smaller screens */
+    padding: 5px; /* Increase padding for better touch interaction */
+  }
+  
+}
 
 
 .footer-logo {
   position: fixed; /* Keep the footer logo fixed relative to the viewport */
-  bottom: 2px; /* Adjust this value to move the logo further down */
+  bottom: 5%; /* Adjust this value to move the logo further down */
   left: 50%; /* Center the logo horizontally */
   transform: translateX(-50%); /* Ensure perfect horizontal centering */
   text-align: center;
@@ -189,6 +211,14 @@ body {
 .footer-logo img {
   width: 118px; /* Adjust the size as needed */
   height: auto; /* Maintain aspect ratio */
+}
+@media screen and (max-width: 768px) {
+  .footer-logo img {
+    width: 80px; /* Adjust the size for smaller screens */
+    bottom: 5%;
+  }
+  
+  
 }
 
 
@@ -225,6 +255,14 @@ body.fade-in {
 
   
 
+}
+
+@media screen and (max-width: 768px) {
+  .page3text {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    
+  }
+  
 }
 .page3text p span {
   display: block; /* Treat each line as a block */
@@ -298,6 +336,18 @@ body.fade-in {
 
 }
 
+  
+
+@media screen and (max-width: 768px) {
+  .orange-arrow img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
+}
+
 
 .orange-arrow img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
@@ -323,6 +373,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 17s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .orangetext {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 
 
@@ -343,9 +401,15 @@ body.fade-in {
   display: flex;
   align-items: center;
   top: 650px; /* Position the arrow */
+}
+@media screen and (max-width: 768px) {
+  .orange-arrow3_1 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
   
-
-
 }
 
 
@@ -373,6 +437,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 4s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .orangetext3_1 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 .page3_1text{
   
   
@@ -386,10 +458,14 @@ body.fade-in {
   letter-spacing: 0%;
   text-align: center;
   top: 14.34px;
- 
+}
 
+@media screen and (max-width: 768px) {
+  .page3_1text {
+    font-size: 18px; 
+   
+  }
   
-
 }
 .page3_1text p  {
   display: block; /* Treat each line as a block */
@@ -424,6 +500,7 @@ body.fade-in {
   margin-bottom: 40px;
   line-height: 50%;
 }
+
 
 .button-group {
   display: flex;
