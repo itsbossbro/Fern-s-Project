@@ -1268,6 +1268,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 6s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .centerorangetext {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 480px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 .center-text16 {
   position: fixed;
@@ -1365,11 +1373,17 @@ body.fade-in {
   display: flex;
   align-items: center;
   top: 650px; /* Position the arrow */
-  
-
 
 }
-
+@media screen and (max-width: 768px) {
+  .orange-arrow18_8s img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
+}
 
 .orange-arrow18_8s img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
@@ -1394,6 +1408,14 @@ body.fade-in {
   opacity: 0; /* Start invisible */
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 8s; /* Delay the appearance by 17 seconds */
+}
+@media screen and (max-width: 768px) {
+  .bluetext18_8s {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
 }
 /*page19*/
 .question-text19{
@@ -1519,6 +1541,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 6s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .bluetext21 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 480px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 /*page22*/
 .navigation-container22 {
@@ -1574,6 +1604,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 7s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .bluetext22 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 /*page22*/
 .bluearrow22 img {
@@ -1593,8 +1631,15 @@ body.fade-in {
   align-items: center;
   top: 650px; /* Position the arrow */
   
-
-
+}
+@media screen and (max-width: 768px) {
+  .bluearrow22 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
 }
 
 /*page23*/
