@@ -977,6 +977,14 @@ body.fade-in {
   animation-delay: 12s; /* Delay the appearance by 17 seconds */
 
 }
+@media screen and (max-width: 768px) {
+  .orangeundertext12 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 
 
@@ -1041,6 +1049,15 @@ body.fade-in {
   
 
 
+}
+@media screen and (max-width: 768px) {
+  .brownarrow12 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
 }
 
 
@@ -1108,6 +1125,15 @@ body.fade-in {
   opacity: 0; /* Add this */
   animation: fadeInDelayed 1s ease-in-out forwards;
   animation-delay: 6s; /* Changed from 10s */
+}
+@media screen and (max-width: 768px) {
+  .brownpg13 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    right: 10px; /* Adjusted position for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+  }
+  
 }
 .brownpg13 img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
@@ -1179,6 +1205,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 8s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .bluetext {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 
 .bluearrow15 img {
@@ -1198,10 +1232,16 @@ body.fade-in {
   align-items: center;
   top: 650px; /* Position the arrow */
   
-
-
 }
-
+@media screen and (max-width: 768px) {
+  .bluearrow15 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
+}
 
 .bluearrow15 img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
