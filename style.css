@@ -2275,13 +2275,7 @@ line-height: 50%;
 
 
 
-.logo-container29 img {
-  width: 118px;
-  height: 52px;
-  top: 535px;
-  left: 137px;
-  
-}
+
 
 .footer-text29 {
   font-family: 'ploy_alpha', sans-serif;
@@ -2357,7 +2351,7 @@ text-align: center;
 
 .logo-container29 {
   position: fixed;
-  top: 55%;
+  top: 53%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -2371,13 +2365,10 @@ text-align: center;
 
 @media screen and (max-width: 768px) {
   .logo-container29 {
-      bottom: 10%;
+      top:53% ;
+
   }
-  
-  .logo-container29 img {
-    width: 57px;
-    height: auto;
-  }
+
 }
 
 .footterbottom {
