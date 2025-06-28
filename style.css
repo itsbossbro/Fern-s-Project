@@ -572,6 +572,14 @@ body.fade-in {
   animation: fadeInDelayed 1s ease-in-out forwards; /* Fade in animation */
   animation-delay: 4s; /* Delay the appearance by 17 seconds */
 }
+@media screen and (max-width: 768px) {
+  .whitetext {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    top: 555px; /* Adjust position for smaller screens */
+    width: 120px; /* Adjust width for smaller screens */
+  }
+  
+}
 
 
 .orange-arrow5 img {
@@ -590,11 +598,17 @@ body.fade-in {
   display: flex;
   align-items: center;
   top: 650px; /* Position the arrow */
-  
-
 
 }
-
+@media screen and (max-width: 768px) {
+  .orange-arrow5 img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 75px; /* Adjusted height for smaller screens */
+    top: 500px; /* Adjusted position for smaller screens */
+    right: 10px;
+  }
+  
+}
 
 .orange-arrow5 img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
